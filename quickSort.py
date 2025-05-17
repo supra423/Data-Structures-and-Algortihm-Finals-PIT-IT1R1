@@ -10,11 +10,3 @@ def quickSort(arr, key = lambda x: x):
     right = [x for x in arr if key(x) > pivot]
 
     return quickSort(left, key) + middle + quickSort(right, key)
-
-def reverseList(arr, key = lambda x: x):
-    arr = quickSort(arr, key = key)
-    arr.reverse()
-
-    return arr
-
-
