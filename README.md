@@ -10,3 +10,11 @@ according to what is being specified. They can be sorted
 alphabetically, or numerically using their student number or
 grade
 
+Group Members:
+
+Aparece,
+Casiño,
+Roa,
+Sabal,
+Sarsonas,
+Tangarorang
