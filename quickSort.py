@@ -1,24 +1,20 @@
-def quickSort(arr):
+def quickSort(arr, key = lambda x: x):
 
     if len(arr) <= 1:
         return arr
-    left, middle, right = [], [], []
-    for i in arr:
 
-        pivot = arr[len(arr) // 2]
+    pivot = key(arr[len(arr) // 2])
 
-        if i < pivot:
-            left.append(i)
-        elif i == pivot:
-            middle.append(i)
-        else:
-            right.append(i)
+    left = [x for x in arr if key(x) < pivot]
+    middle = [x for x in arr if key(x) == pivot]
+    right = [x for x in arr if key(x) > pivot]
 
-    return quickSort(left) + middle + quickSort(right)
+    return quickSort(left, key) + middle + quickSort(right, key)
 
-def reverse_list(array):
-    array = quick_sort(array)
-    array.reverse()
-    return array
+def reverseList(arr, key = lambda x: x):
+    arr = quickSort(arr, key = key)
+    arr.reverse()
+
+    return arr
 
 
