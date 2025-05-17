@@ -34,13 +34,13 @@ def showSortedStudents(accordingTo):
 def studentSort():
     while True:
         print("""
-        Do you want to view students according to:
+Do you want to view students according to:
 
-        Name? (Type "1")
-        Student number? (Type "2")
-        Grade? (Type "3")
+Name? (Type "1")
+Student number? (Type "2")
+Grade? (Type "3")
 
-        Type "0" if you want to quit.
+Type "0" if you want to quit.
         """)
 
         choice = input("Please choose: ")

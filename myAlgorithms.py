@@ -11,3 +11,20 @@ def quickSort(arr, key = lambda x: x):
     right = [x for x in arr if key(x) > pivot]
 
     return quickSort(left, key) + middle + quickSort(right, key)
+
+def binarySearch(arr, target, key = lambda x: x):
+    low = 0 
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        midVal = key(arr[mid])
+
+        if midVal == target:
+            return arr[mid]
+        elif midVal < target:
+            low = mid + 1
+        else: 
+            high = mid - 1
+
+    return None
