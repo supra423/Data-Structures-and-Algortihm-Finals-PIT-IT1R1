@@ -1,5 +1,5 @@
 import sqlite3
-from quickSort import quickSort
+from myAlgorithms import quickSort
 
 connection = sqlite3.connect("database.s3db")
 cursor = connection.cursor()

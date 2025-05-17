@@ -1,5 +1,6 @@
 def quickSort(arr, key = lambda x: x):
-
+    # this function demonstrates the quicksort algorithm
+    # which has a time complexity of O(n log n)
     if len(arr) <= 1:
         return arr
 
