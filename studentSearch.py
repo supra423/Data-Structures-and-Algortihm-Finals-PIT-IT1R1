@@ -13,8 +13,6 @@ studentRows = list(row)
 sortedStudentRowsName = quickSort(studentRows, key = lambda student: student[1].lower())
 sortedStudentRowsStudentNumber = quickSort(studentRows, key = lambda student: student[2])
 
-# print(binarySearch(sortedStudentRowsStudentNumber, 2022305494, key = lambda student: student[2]))
-
 def searchName():
     print("When searching a name, follow the format:\nSurname, FirstName MiddleInitial (if it exists)")
     name = input("Please enter student's name (Please capitalize properly and full name is required): ")
@@ -33,7 +31,6 @@ def searchStudentNumber():
     print(f"\nStudent's name: {result[1]}")
     print(f"Student number: {result[2]}")
     print(f"Student's grade: {result[3]}")
-
 
 def studentSearch():
     while True:
